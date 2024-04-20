@@ -9,3 +9,14 @@ def uppercase_string(input_string):
     str: Версия входной строки в верхнем регистре.
     """
     return input_string.upper()
+def capitalize_first_letters(input_string):
+    """
+    Эта функция принимает строку в качестве входных данных и возвращает строку с заглавными первыми буквами каждого слова.
+
+    Args:
+    input_string (str): Входная строка, для которой нужно сделать заглавной первую букву каждого слова.
+
+    Returns:
+    str: Строка с заглавными первыми буквами каждого слова.
+    """
+    return ' '.join(word.capitalize() for word in input_string.split())
